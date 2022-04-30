@@ -5,7 +5,17 @@ stages:
           image: maven:3.6.3-jdk-11-slim
           shellScript: |-
             mvn clean install package
-#  - name: Build
+  - name: Publicando Imagem
+    steps:
+      - publishImageConfig:
+          dockerfilePath: ./Dockerfile
+          buildContext: .
+          tag: builders-service:${CICD_EXECUTION_SEQUENCE}
+#  - name: Deploy
+#    steps:
+#      - applyYamlConfig:
+#          path: ./deployment.yml
+#  - name: Construindo Image
 #    steps:
 #      - runScriptConfig:
 #          image: dsantana87/builders-service:builders-service
