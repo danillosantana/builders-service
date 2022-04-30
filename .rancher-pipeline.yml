@@ -2,7 +2,7 @@ stages:
   - name: Compilando Código
     steps:
       - runScriptConfig:
-          image: openjdk:11
+          image: maven:3.6.3-jdk-11-slim
           shellScript: |-
             mvn -U clean install package
 #  - name: Build
