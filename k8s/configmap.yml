@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: builders-service-configmap
+data:
+  SPRING_DATASOURCE_PLATFORM: mysql
+  SPRING_DATASOURCE_DRIVER-CLASS-NAME: com.mysql.cj.jdbc.Driver
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/builders?serverTimezone=America/Sao_Paulo

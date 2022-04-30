@@ -1,0 +1,173 @@
+{
+	"id": "26fc6257-720f-311e-d615-390d45d9a6bb",
+	"name": "Plataform Builders",
+	"description": "",
+	"order": [
+		"b7913fee-ca79-b44c-f956-4f220b7789f2",
+		"8bfe1531-2fef-d046-8cce-b4985900ad12",
+		"ec67777e-1e2b-8618-3a86-35cae34267c2",
+		"da171fe1-800e-c783-ea7d-702e41b10974",
+		"2d95924a-3dae-f280-2a94-8040c34ba372"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1616726594890,
+	"owner": "1565677",
+	"public": false,
+	"requests": [
+		{
+			"id": "2d95924a-3dae-f280-2a94-8040c34ba372",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8097/api/builders/cliente/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "wifi.jfif",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616726754430,
+			"name": "http://localhost:8097/api/builders/cliente/11",
+			"description": "",
+			"collectionId": "26fc6257-720f-311e-d615-390d45d9a6bb",
+			"responses": []
+		},
+		{
+			"id": "8bfe1531-2fef-d046-8cce-b4985900ad12",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8097/api/builders/cliente/salvar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616727188260,
+			"name": "http://localhost:8097/api/builders/cliente/salvar",
+			"description": "",
+			"collectionId": "26fc6257-720f-311e-d615-390d45d9a6bb",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\" : \"Teste 4\",\n\t\"email\" : \"fdsafds@gmail.com\",\n\t\"dataNascimento\" : \"01/03/1985\",\n\t\"numeroRegistro\" : \"067.483.340-63\",\n\t\"telefones\" : [\n\t\t\t{ \"numero\" : \"4444444444\"}\n\t\t\t]\n}\n\n"
+		},
+		{
+			"id": "b7913fee-ca79-b44c-f956-4f220b7789f2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8097/api/builders/cliente/alterar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616727248001,
+			"name": "http://localhost:8097/api/builders/cliente/alterar",
+			"description": "",
+			"collectionId": "26fc6257-720f-311e-d615-390d45d9a6bb",
+			"responses": [],
+			"rawModeData": " {\n        \"id\" : 30,\n        \"nome\": \"Teste 4444444\",\n        \"email\": \"fdsafds@gmail.com\",\n        \"idade\": 36,\n        \"numeroRegistro\": \"06748334063\",\n        \"dataNascimento\": \"01/03/1985\",\n        \"telefones\": [\n            {\n                \"id\": 21,\n                \"numero\": \"4444444444\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "da171fe1-800e-c783-ea7d-702e41b10974",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8097/api/builders/cliente/buscar/por/filtro",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616726779719,
+			"name": "http://localhost:8097/api/builders/cliente/buscar/por/filtro",
+			"description": "",
+			"collectionId": "26fc6257-720f-311e-d615-390d45d9a6bb",
+			"responses": [],
+			"rawModeData": " {\n        \"nome\": \"<nome>\",\n        \"email\": \"<email>\"\n    }"
+		},
+		{
+			"id": "ec67777e-1e2b-8618-3a86-35cae34267c2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8097/api/builders/cliente/buscar/por/pagina/0/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "26fc6257-720f-311e-d615-390d45d9a6bb",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8097/api/builders/cliente/buscar/por/pagina/0/10",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616726699029,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -1,0 +1,8 @@
+- Entendimento do Problema
+- Entendimento do Domínio
+- Divisão do Problema em Tarefas
+- Configuração  do ambiente
+- Construção dos Teste
+- Implementação da Serviços necessários
+- Teste funcional da aplicação
+- Empacotamento com Docker

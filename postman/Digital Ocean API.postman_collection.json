@@ -1,0 +1,180 @@
+{
+	"id": "2765a647-e41d-53bc-f58a-958ac7868acd",
+	"name": "Digital Ocean API",
+	"description": "",
+	"order": [
+		"2186975e-e30a-e6f5-b31f-4ac3ab95b5ac",
+		"8e871e6f-eeb8-40d8-6054-38c8a66d3e59",
+		"90c6b6ce-c6c5-a2d3-0d24-89b041152ed4",
+		"a9d66b00-0ce1-c8c4-7d60-47ef83775823",
+		"edc77267-fb17-b810-7efd-3d99d529efb8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1616727392706,
+	"owner": "1565677",
+	"public": false,
+	"requests": [
+		{
+			"id": "2186975e-e30a-e6f5-b31f-4ac3ab95b5ac",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://165.22.177.22:8097/api/builders/cliente/salvar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2765a647-e41d-53bc-f58a-958ac7868acd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8097/api/builders/cliente/salvar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616727399527,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nome\" : \"Teste 4\",\n\t\"email\" : \"fdsafds@gmail.com\",\n\t\"dataNascimento\" : \"01/03/1985\",\n\t\"numeroRegistro\" : \"067.483.340-63\",\n\t\"telefones\" : [\n\t\t\t{ \"numero\" : \"4444444444\"}\n\t\t\t]\n}\n\n"
+		},
+		{
+			"id": "8e871e6f-eeb8-40d8-6054-38c8a66d3e59",
+			"headers": "",
+			"headerData": [],
+			"url": "http://165.22.177.22:8097/api/builders/cliente/buscar/por/pagina/0/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2765a647-e41d-53bc-f58a-958ac7868acd",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8097/api/builders/cliente/buscar/por/pagina/0/10",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616727465347,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "90c6b6ce-c6c5-a2d3-0d24-89b041152ed4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://165.22.177.22:8097/api/builders/cliente/buscar/por/filtro",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2765a647-e41d-53bc-f58a-958ac7868acd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8097/api/builders/cliente/buscar/por/filtro",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616727485396,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \"nome\": \"<nome>\",\n        \"email\": \"<email>\"\n    }"
+		},
+		{
+			"id": "a9d66b00-0ce1-c8c4-7d60-47ef83775823",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://165.22.177.22:8097/api/builders/cliente/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2765a647-e41d-53bc-f58a-958ac7868acd",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"name": "http://localhost:8097/api/builders/cliente/11",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616727498301,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "edc77267-fb17-b810-7efd-3d99d529efb8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://165.22.177.22:8097/api/builders/cliente/alterar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "2765a647-e41d-53bc-f58a-958ac7868acd",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8097/api/builders/cliente/alterar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1616727509268,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \"id\" : 30,\n        \"nome\": \"Teste 4444444\",\n        \"email\": \"fdsafds@gmail.com\",\n        \"idade\": 36,\n        \"numeroRegistro\": \"06748334063\",\n        \"dataNascimento\": \"01/03/1985\",\n        \"telefones\": [\n            {\n                \"id\": 21,\n                \"numero\": \"4444444444\"\n            }\n        ]\n    }"
+		}
+	]
+}

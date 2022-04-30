@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  mysqldb:
+    image: mysql
+    ports:
+      - 3306:3306
+    networks:
+      - buildersnet
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: builders
+      MYSQL_PASSWORD: root
+    volumes:
+      - mysql-data:/var/lib/mysql
+  builders-service:
+    image: builders-service
+    ports:
+      - 8097:8097
+    networks:
+      - buildersnet
+    depends_on:
+      - mysqldb
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 2
+      restart_policy:
+        condition: on-failure
+  
+
+volumes:
+  mysql-data:
+
+networks:
+  buildersnet:

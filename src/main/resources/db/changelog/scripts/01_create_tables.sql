@@ -1,0 +1,22 @@
+--liquibase formatted sql
+--changeset danillo:01_create-tables
+
+CREATE TABLE `cliente` (
+  `PK_CLIENTE` bigint NOT NULL AUTO_INCREMENT,
+  `DS_NOME` varchar(100) DEFAULT NULL,
+  `DS_EMAIL` varchar(100) DEFAULT NULL,
+  `NUMERO_REGISTRO` varchar(20) DEFAULT NULL,
+  `DT_NASCIMENTO` date DEFAULT NULL,
+  PRIMARY KEY (`PK_CLIENTE`)
+);
+
+
+--CREATE TABLE `telefone` (
+--  `PK_TELEFONE` bigint NOT NULL AUTO_INCREMENT,
+--  `DS_NUMERO` varchar(12) DEFAULT NULL,
+--  `FK_CLIENTE` bigint DEFAULT NULL,
+--  PRIMARY KEY (`PK_TELEFONE`),
+--  KEY `FK_TELEFONE_1_idx` (`FK_CLIENTE`),
+--  CONSTRAINT `FK_TELEFONE_1` FOREIGN KEY (`FK_CLIENTE`) REFERENCES `cliente` (`PK_CLIENTE`)
+--);
+

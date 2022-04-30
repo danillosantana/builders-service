@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    - local
+  application:
+    name: builders-service
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:sisget-local;MODE=MYSQL
+    username: root
+    password: root
+    driver-class-name: org.h2.Driver
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+      properties:
+        hibernate:
+          enable_lazy_load_no_trans: true
+      ddl-auto: none
+      generate-ddl: false
+    platform: h2
+  liquibase:
+    contexts: local
+    enabled: true
+    change-log: classpath:db/changelog/master.xml
+
+---
+server:
+  port: ${PORT:8097}
+  use-forward-headers: true
+  servlet.context-path: /api/v1
+  main.allow-bean-definition-overriding: true
+  jackson.serialization.WRITE_DATES_AS_TIMESTAMPS: false
+
+
+
+
+
+
