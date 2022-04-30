@@ -1,9 +1,10 @@
 stages:
   - name: Compilando Código
     steps:
-      image: openjdk:11
-      shellScript: |-
-        mvn -U clean install package
+      - runScriptConfig:
+          image: openjdk:11
+          shellScript: |-
+            mvn -U clean install package
 #  - name: Build
 #    steps:
 #      - runScriptConfig:
