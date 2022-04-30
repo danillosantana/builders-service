@@ -10,7 +10,9 @@ stages:
       - publishImageConfig:
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: builders-service:${CICD_EXECUTION_SEQUENCE}
+          tag: dsantana87/builders-service:builders-service:${CICD_EXECUTION_SEQUENCE}
+          pushRemote: true
+          registry: dsantana87/builders-service:builders-service
 #  - name: Deploy
 #    steps:
 #      - applyYamlConfig:
