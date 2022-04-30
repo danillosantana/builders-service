@@ -10,9 +10,9 @@ stages:
       - publishImageConfig:
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: builders-service:${CICD_EXECUTION_SEQUENCE}
-#          pushRemote: true
-#          registry: dsantana87/builders-service:builders-service
+          tag: dsantana87/builders-service:builders-service
+          pushRemote: true
+          registry: hub.docker.com
 #  - name: Deploy
 #    steps:
 #      - applyYamlConfig:
