@@ -4,7 +4,7 @@ stages:
       - runScriptConfig:
           image: maven:3.6.3-jdk-11-slim
           shellScript: |-
-            mvn -U clean install
+            mvn dependency:resolve -X clean install
 #  - name: Build
 #    steps:
 #      - runScriptConfig:
